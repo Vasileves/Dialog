@@ -1,0 +1,124 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=cyrillic');
+
+body {
+  background-color: #FDFFF8;
+  font-family: 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav {
+  position: fixed;
+  left: calc((100vw - 600px) / 2);
+  transform: translateX(-100%);
+  padding: 24px 32px 0 0;
+}
+nav ul li {
+  font-size: 20px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav__icon {
+  width: 28px;
+  height: 28px;
+  background: #000;
+}
+.nav__icon--home {
+  mask: url(../img/home-icn.svg);
+  -webkit-mask: url(../img/home-icn.svg);
+}
+nav ul li:hover {
+  color: #0038FF;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+nav ul li:hover .nav__icon--home {
+  background: #0038FF;
+}
+
+
+/* MAIN */
+
+main {
+  width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 25vh;
+}
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.main__header h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.story {
+  padding: 24px 32px 16px 24px;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.story__user-ava {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+.story__body__header {
+  display: flex;
+  align-items: center;
+}
+.story__body__header * {
+  margin-right: 16px;
+}
+.story__body__header h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.story__body__header a,
+.story__body__header span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.story__body__header a {
+  text-decoration: none;
+}
+.story__body p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 8px;
+}
+.story__body__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 140px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.35);
+  margin-top: 16px;
+}
+.story__body__actions li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.story__body__actions li:hover {
+  cursor: pointer;
+  filter: brightness(0.05);
+}
+.story__body__actions__item {
+  position: absolute;
+  left: 28px;
+}
+
+
+
+
+
+
+
+
+/* EOF */
