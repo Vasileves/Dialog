@@ -15,18 +15,36 @@ nav {
 }
 nav ul li {
   font-size: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 90px;
+  vertical-align: middle;
+  padding: 15px;
 }
 .nav__icon {
   width: 28px;
   height: 28px;
   background: #000;
+  display: inline-block;
+  vertical-align: middle;
+
 }
 .nav__icon--home {
   mask: url(../img/home-icn.svg);
   -webkit-mask: url(../img/home-icn.svg);
+}
+.nav__icon--bell {
+  mask: url(../img/bell-icn.svg);
+  -webkit-mask: url(../img/bell-icn.svg);
+}
+.nav__icon--chat {
+  mask: url(../img/chat-icn.svg);
+  -webkit-mask: url(../img/chat-icn.svg);
+}
+.nav__icon--bookmark {
+  mask: url(../img/bookmark-icn.svg);
+  -webkit-mask: url(../img/bookmark-icn.svg);
 }
 nav ul li:hover {
   color: #0038FF;
