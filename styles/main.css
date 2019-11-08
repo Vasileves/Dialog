@@ -54,6 +54,18 @@ nav ul li:hover .nav__icon--home {
   background: #0038FF;
 }
 
+.postbtn{
+  background-color: #0038FF;
+  text-align: center;
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  padding: 16px 55px;
+  text-decoration: none;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
 
 /* MAIN */
 
@@ -132,11 +144,50 @@ main {
   left: 28px;
 }
 
+/* UR FRIENDS MODULE */
 
+.frnd{
+  background: rgba(25, 25, 25, 0.05);
+  border-radius: 12px;
+  margin-right: 32px;
+  width: 302px;
+}
+.frnd__header{
+font-family: 'Fira Code', monospace;
+line-height: 24px;
+color: #000000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.frnd__header h1{
+  font-weight: bold;
+  font-size: 20px;
+}
+.frnd h2{
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.frnd h3{
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 8px;
+}
 
-
-
-
+.frnd__itm{
+font-family: 'Fira Code', monospace;
+font-weight: normal;
+height: 58
+font-size: 18px;
+color: #000000;
+padding-top: 8px;
+padding-left: 16px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+padding: 8px 8px 8px 20px;
+display: flex;
+}
 
 
 /* EOF */
